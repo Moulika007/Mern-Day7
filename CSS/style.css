@@ -1,0 +1,143 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5faff;
+  color: #002244;
+}
+
+header {
+  background: linear-gradient(90deg, #0044cc, #00aaff);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.intro.reverse {
+  flex-direction: row-reverse; /* Image left, text right */
+}
+
+.intro .text {
+  flex: 1;
+  padding: 25px;
+}
+
+.intro .image {
+  flex: 1;
+  text-align: center;
+  
+
+}
+
+.intro img {
+  border-radius: 10px;
+  width:500px;
+  height: 300px;
+  height: fit-content;
+  
+}
+
+
+.video {
+  text-align: left;
+  padding: 30px;
+}
+
+footer {
+  background-color: #002244;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+
+.login-form {
+  max-width: 400px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #0077cc;
+  border-radius: 8px;
+}
+
+.login-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.login-form input,
+.login-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #005fa3;
+}
+
+.robot-type {
+  max-width: 1000px;  
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #0077cc;
+  border-radius: 8px;
+}
+
+.robot-type h2 {
+  font-family: Georgia, serif; 
+  font-size: 28px;             
+  color: #0044cc;
+  margin-bottom: 10px;
+}
+
+.robot-type p {
+  font-family: Arial, sans-serif; 
+  font-size: 16px;             
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.robot-type img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
