@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        @keyframes aids {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(200px);
+            }
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            background-color: rgb(24, 114, 224);
+            animation: aids 5s infinite alternate;
+        }
+        @keyframes growBox {
+            0%{
+                width: 50px;
+                height: 50px;
+            }
+            50%{
+                background-color: yellow;
+            }
+            100%{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+        }
+        .growBox{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            background-color: blue;
+            animation: growBox 5s infinite alternate;
+        }
+        .box3{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            background-color: aquamarine;
+            animation: rot 2s infinite alternate;
+        }
+        @keyframes rot {
+            from{ transform: rotate(0deg); }
+            to {
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="growBox"></div>
+    <div class="box3"></div>
+</body>
+</html>

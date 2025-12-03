@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .one{
+              height:100px;
+            width: 200px;
+            background-color: greenyellow;
+            border-style: solid;
+            border:none;
+            margin:10px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            z-index: 3;
+        }
+        .two{
+           height:100px;
+            width: 200px;
+            background-color: yellow;
+            border-style: solid;
+            border: none;
+            margin: 10px; 
+             position: relative;
+            top: 50px;
+            left: 50px; 
+            z-index: 1;
+        }
+        .three{
+             height:100px;
+            width: 200px;
+            background-color: red;
+            border-style: solid;
+            border:none;
+            margin: 10px;
+            z-index: 0;
+        }
+        .overflow1{
+    background-color: coral;
+    width: 200px;
+    height: 65px;
+    border: 1px solid;
+    overflow: visible;
+}
+.overflow2{
+    background-color:lawngreen;
+    width: 200px;
+    height: 65px;
+    border: 1px solid;
+    overflow: hidden;
+    margin:100px;
+    margin-left: 10px;
+}
+.overflow3{
+    background-color:plum;
+    width: 200px;
+    height: 65px;
+    border: 1px solid;
+    overflow: scroll;
+    margin:100px;
+    margin-left: 10px;
+}
+.overflow4{
+    background-color:rgb(252, 0, 227);
+    width: 200px;
+    height: 65px;
+    border: 1px solid;
+    overflow: auto;
+    margin:100px;
+    margin-left: 10px;
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">class1</div>
+    <div class="two">class2</div>
+    <div class="three">class3</div>
+
+    </div>
+    <div class="overflow1">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    </div>
+    <div class="overflow2">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    
+    <div class="overflow3">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    <div class="overflow4">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+</body>
+</html>
