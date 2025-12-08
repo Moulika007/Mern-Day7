@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | LuxeStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body style="display:flex; justify-content:center; align-items:center; height:100vh;">
+    
+    <div style="background:#fff; padding:40px; width:100%; max-width:400px; box-shadow:var(--shadow); text-align:center; border-radius:10px;">
+        <h2 style="margin-bottom:20px; color:var(--primary);">Welcome Back</h2>
+        <form onsubmit="event.preventDefault(); window.location.href='index.html';">
+            <input type="email" placeholder="Email" required style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #ddd;">
+            <input type="password" placeholder="Password" required style="width:100%; padding:10px; margin-bottom:20px; border:1px solid #ddd;">
+            <button class="btn" style="width:100%;">Login</button>
+        </form>
+        <p style="margin-top:15px; font-size:0.9rem;">Don't have an account? <a href="#" style="color:var(--primary); font-weight:bold;">Sign up</a></p>
+        <br>
+        <a href="index.html" style="font-size:0.8rem; color:#888;">Back to Home</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeStore | Premium E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">Luxe.</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="admin.html">Admin</a>
+        </div>
+        <div class="nav-icons">
+            <a href="auth.html">Login</a>
+            <a href="cart.html" class="badge">Cart <span id="cart-count">0</span></a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Elevate Your <br>Lifestyle.</h1>
+            <p>Curated essentials for the modern minimalist. Quality that speaks for itself.</p>
+            <br>
+            <button class="btn" onclick="window.location.href='shop.html'">Explore Collection</button>
+        </div>
+        <div class="hero-img">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800" alt="Hero">
+        </div>
+    </header>
+
+    <section class="category-section">
+        <h2 class="section-title">Browse Categories</h2>
+        <div class="cat-container">
+            <div class="cat-circle" onclick="window.location.href='shop.html?cat=Fashion'">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=200" class="cat-img">
+                <h4>Fashion</h4>
+            </div>
+            
+            <div class="cat-circle" onclick="window.location.href='shop.html?cat=Electronics'">
+                <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=200" class="cat-img">
+                <h4>Electronics</h4>
+            </div>
+            
+            <div class="cat-circle" onclick="window.location.href='shop.html?cat=Home'">
+                <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=200" class="cat-img">
+                <h4>Home</h4>
+            </div>
+            
+            <div class="cat-circle" onclick="window.location.href='shop.html?cat=Beauty'">
+                <img src="https://images.unsplash.com/photo-1522335789203-abd7fe01f1f5?w=200" class="cat-img">
+                <h4>Beauty</h4>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Trending Now</h2>
+        <div class="grid-container" id="featured-grid">
+            </div>
+    </section>
+
+    <section class="deal-banner">
+        <div class="deal-overlay">
+            <h2>Summer Sale is Live</h2>
+            <p>Get up to 50% off on all Fashion items. Limited time only.</p>
+            <button class="btn" onclick="window.location.href='shop.html?cat=Fashion'">Shop The Sale</button>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">New Arrivals</h2>
+        <div class="grid-container" id="new-arrivals-grid">
+            </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Join Our Newsletter</h2>
+        <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email address">
+            <button class="btn">Subscribe</button>
+        </div>
+    </section>
+
+    <footer style="background: #333; color: white; padding: 40px 5%; text-align: center; margin-top: 40px;">
+        <p>&copy; 2025 LuxeStore. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

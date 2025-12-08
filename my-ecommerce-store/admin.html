@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">Luxe Admin</div>
+        <div class="nav-links">
+            <a href="index.html">View Site</a>
+        </div>
+    </nav>
+
+    <div class="admin-container">
+        <div class="admin-header">
+            <h2>Dashboard</h2>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Sales</h3>
+                <h2 id="stat-sales">$0</h2>
+            </div>
+            <div class="stat-card">
+                <h3>Total Orders</h3>
+                <h2 id="stat-orders">0</h2>
+            </div>
+            <div class="stat-card">
+                <h3>Visitors</h3>
+                <h2>1.2k</h2>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 40px;">
+            <div style="flex: 1; background: #fff; padding: 20px; box-shadow: var(--shadow);">
+                <h3>Add New Product</h3>
+                <br>
+                <form id="add-product-form">
+                    <div class="form-group">
+                        <input type="text" id="p-name" placeholder="Product Title" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="p-price" placeholder="Price" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="p-cat">
+                            <option value="Fashion">Fashion</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Home">Home</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="p-img" placeholder="Image URL (Unsplash link)">
+                    </div>
+                    <button type="submit" class="btn">Add Product</button>
+                </form>
+            </div>
+
+            <div style="flex: 2; background: #fff; padding: 20px; box-shadow: var(--shadow);">
+                <h3>Inventory</h3>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-products-list">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

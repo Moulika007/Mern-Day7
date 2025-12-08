@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Robotics Evolution</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    @keyframes walk {
+      0% { transform: translateX(0) scale(1); }
+      50% { transform: translateX(40px) scale(1.02); }
+      100% { transform: translateX(0) scale(1); }
+    }
+    .robot-walk {
+      animation: walk 3s infinite ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="bg-[#f5faff] text-[#002244] font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-gradient-to-r from-[#0044cc] to-[#00aaff] text-white p-6 text-center">
+    <h1 class="text-3xl font-bold">Robotics Evolution</h1>
+    <nav class="mt-3 space-x-6">
+      <a href="indextail.html" class="hover:text-yellow-300 font-bold">Home</a>
+      <a href="robotstail.html" class="hover:text-yellow-300 font-bold">Types of Robots</a>
+      <a href="logintail.html" class="hover:text-yellow-300 font-bold">Login</a>
+    </nav>
+  </header>
+
+  <main class="space-y-16">
+
+    <!-- INTRO SECTION -->
+    <section class="flex flex-col md:flex-row items-center justify-between p-8 gap-6">
+      <div class="flex-1">
+        <h2 class="text-2xl font-bold mb-3">What is Robotics?</h2>
+        <p>
+          Robotics is an interdisciplinary field combining computer science, engineering, and design 
+          to create autonomous or semi-autonomous machines. Robots are designed to mimic, replace, 
+          or assist humans in tasks across industries like manufacturing, healthcare, agriculture, 
+          logistics, and defence.
+        </p>
+      </div>
+
+      <div class="flex-1 text-center">
+        <img class="rounded-lg w-full max-w-lg" 
+             src="https://www.e-spincorp.com/wp-content/uploads/2020/08/robotics-automation-1024x72dpi.jpg">
+      </div>
+    </section>
+
+    <!-- HISTORY SECTION -->
+    <section class="flex flex-col md:flex-row-reverse items-center justify-between p-8 gap-6">
+      <div class="flex-1 text-center">
+        <img class="rounded-lg w-full max-w-lg"
+             src="https://i.pinimg.com/736x/9b/ee/07/9bee07215fd24e17c3f4aa48946df171.jpg">
+      </div>
+
+      <div class="flex-1">
+        <h2 class="text-2xl font-bold">How Robotics Evolved</h2>
+        <ul class="list-disc ml-5 mt-2 space-y-1">
+          <li><strong>Industrial Revolution:</strong> Focus on engineering and science.</li>
+          <li><strong>1930s:</strong> NC machines introduced.</li>
+          <li><strong>1937:</strong> Griffith Taylor built the first industrial robot.</li>
+          <li><strong>1954:</strong> George Devol patented the first industrial robot.</li>
+          <li><strong>1990s:</strong> Remote-controlled robots synchronized industry operations.</li>
+        </ul>
+        <p class="italic mt-3">Isaac Asimov’s Three Laws of Robotics shaped ethical thinking in robotics.</p>
+        <p class="font-bold">Author: Moulika</p>
+      </div>
+    </section>
+
+    <!-- APPLICATIONS -->
+    <section class="flex flex-col md:flex-row items-center justify-between p-8 gap-6">
+      <div class="flex-1">
+        <h2 class="text-2xl font-bold mb-3">Applications of Robotics</h2>
+        <ul class="list-disc ml-5 space-y-1">
+          <li>Manufacturing</li>
+          <li>Healthcare</li>
+          <li>Logistics</li>
+          <li>Agriculture</li>
+          <li>Education</li>
+          <li>Space Exploration</li>
+          <li>Defence</li>
+          <li>Smart Cities</li>
+        </ul>
+      </div>
+
+      <div class="flex-1 text-center">
+        <img class="rounded-lg w-full max-w-lg"
+             src="https://ars.els-cdn.com/content/image/1-s2.0-S0963996923008104-ga1.jpg">
+      </div>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section class="px-8">
+      <h2 class="text-2xl font-bold mb-4">Watch Robotics in Action</h2>
+
+      <ul class="list-disc ml-5 mb-5 space-y-2">
+        <li><a href="https://www.youtube.com/embed/Ah_uuTwGOYU" target="video" class="text-blue-600 underline">Man VS Robot</a></li>
+        <li><a href="https://www.youtube.com/embed/htjRUL3neMg" target="video" class="text-blue-600 underline">What is robotics?</a></li>
+        <li><a href="https://www.youtube.com/embed/Jky9I1ihAkg" target="video" class="text-blue-600 underline">Advanced robotics?</a></li>
+      </ul>
+
+      <iframe class="w-full max-w-3xl h-64 md:h-80"
+              src="https://www.youtube.com/embed/mf2rvZ7Uv4s"
+              allowfullscreen></iframe>
+    </section>
+
+    <!-- WALKING ROBOT ANIMATION -->
+    <div class="w-full flex justify-center mt-10 mb-20">
+      <img src="https://pngimg.com/d/robot_PNG47.png"
+           class="robot-walk w-40 md:w-52">
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#002244] text-white text-center p-4">
+    © 2025 Robotics Evolution Project
+  </footer>
+
+</body>
+</html>
